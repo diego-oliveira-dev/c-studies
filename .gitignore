@@ -1,0 +1,18 @@
+# Executables
+*.exe
+
+# Object files
+*.obj
+
+# MSVC debug files
+*.pdb
+*.ilk
+
+# Visual Studio
+*.VC.db
+*.VC.opendb
+.vscode/
+
+# Build directories
+bin/
+bin-int/
