@@ -1,9 +1,10 @@
-# C/C++ Learning Journey
+# C Studies
 
-This repository contains my hands-on practice while learning C and C++ through exercises, experiments, and small projects.
-The goal is to build a solid understanding of programming fundamentals, memory management, problem-solving, and core language concepts.
+A repository dedicated to learning C programming language from the ground up.
 
-## 🎯 Purpose
+The goal is to build a solid understanding of C, low-level programming concepts, memory management and data structures without relying on external libraries whenever possible.
 
-This repository is for learning and experimentation.
+## Purpose
+
+This repository serves as a personal study log. The focus is on understanding how things work internally rather than building production-ready applications.
 Code here may evolve and change frequently as I improve my understanding.
