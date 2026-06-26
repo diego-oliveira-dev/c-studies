@@ -2,14 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-int length(char* str) {
-    int length = 0;
-    while (str[length] != '\0') {
-        length++;
-    }
-    return length;
-}
+#include "../lib/customlib.h"
 
 void reverse(char* src, int str_size, char* dest) {
     int left = 0;
@@ -23,18 +16,10 @@ void reverse(char* src, int str_size, char* dest) {
     dest[str_size] = '\0'; 
 }
 
-bool compare(char* str1, char* str2) {
-    int size = length(str1);
-    for (int i = 0; i < size; i++) {
-        if (str1[i] != str2[i]) return false;
-    }
-    return true;
-}
-
 bool isPalyndrome(char* word, int word_size) {
     char reversed[word_size + 1];
     reverse(word, word_size, reversed);
-    if (compare(word, reversed)) {
+    if (compare_str(word, reversed)) {
         return true;  
     } 
     return false;
@@ -42,7 +27,7 @@ bool isPalyndrome(char* word, int word_size) {
 
 int main() {
     char word[] = "RACECAR";
-    int word_size = length(word);
+    int word_size = length_str(word);
     
     char reversed[word_size + 1];
     reverse(word, word_size, reversed);
@@ -51,8 +36,6 @@ int main() {
     printf("Length: %d\n", word_size);
     printf("Reversed: %s\n", reversed);
     printf("Is palyndrome? %s\n", isPalyndrome(word, word_size) ? "true" : "false");
-
-    // printf("Are they equal? %s\n", compare("DIEGO", "diego") ? "true" : "false");
-
+    
     return EXIT_SUCCESS;
 }

@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
+#include "../lib/customlib.h"
 
 static const int ARR_SIZE = 3;
-
-void print_array(int *arr, int arr_size) {
-    for (int i = 0; i < arr_size; i++) {
-        printf("arr[%d] = %d\n", i, arr[i]);
-    }
-}
 
 int main() {
     int arr[] = {1, 2, 3};
